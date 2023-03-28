@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <form>
+    <div>
+      <label><input type="checkbox" name="sns" value="instagram"/>인스타그램</label>
+    </div>
+    <button>회원 가입</button>
+  </form>
+  <script>
+    function formCheck(frm){
+      var msg = '';
+
+      if(frm.id.value.length<3){
+        setMessage('id의 길이는 3이상이어야 합니다.', frm.id);
+        return false;
+      }
+
+      return true;
+    }
+
+    function setMessage(msg, element){
+      document.getElementById("msg").innerHTML = '<i class="fa fa-exclamation-circle"> ${msg}</i>';
+
+      if(element){
+        element.select();
+      }
+    }
+  </script>
+</body>
+</html>
