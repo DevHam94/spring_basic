@@ -1,0 +1,1 @@
+car=com.fastcampus.spring_basic.ch3.diCopy1.Truck

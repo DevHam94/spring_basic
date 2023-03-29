@@ -22,7 +22,7 @@ public class MyDispatcherServlet extends HttpServlet {
         String viewName = "";
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String result = "";
 
         response.setContentType("text/html");
@@ -50,5 +50,5 @@ public class MyDispatcherServlet extends HttpServlet {
 
         // 5.렌더링 결과를 출력한다.
         out.println(result);
-    }
+    }*/
 }

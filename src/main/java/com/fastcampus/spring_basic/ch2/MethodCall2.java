@@ -14,24 +14,24 @@ public class MethodCall2 {
     public static void main(String[] args) throws IOException {
 
         // 1. YoilTellerMVC의 객체를 생성
-        Class clazz = Class.forName("com.fastcampus.spring_basic.ch2.YoilTellerMVC");
-        Object obj = clazz.newInstance();
-
-        // 2. main메서드의 정보를 가져온다.
-        Method main = clazz.getDeclaredMethod("main", int.class, int.class, int.class, Model.class);
-
-        Model model = new BindingAwareModelMap();
-        System.out.println("[before] model="+model);
-
-        //String viewName = obj.main(2021, 10, 1, model);
-        String viewName = (String)main.invoke(obj, new Object[] { 2021, 10, 1, model });
-        System.out.println("viewName="+viewName);
-
-        // Model의 내용을 출력
-        System.out.println("[after] model="+model);
-
-        // 텍스트 파일을 이용한 rendering
-        render(model, viewName);
+//        Class clazz = Class.forName("com.fastcampus.spring_basic.ch2.YoilTellerMVC");
+//        Object obj = clazz.newInstance();
+//
+//        // 2. main메서드의 정보를 가져온다.
+//        Method main = clazz.getDeclaredMethod("main", int.class, int.class, int.class, Model.class);
+//
+//        Model model = new BindingAwareModelMap();
+//        System.out.println("[before] model="+model);
+//
+//        //String viewName = obj.main(2021, 10, 1, model);
+//        String viewName = (String)main.invoke(obj, new Object[] { 2021, 10, 1, model });
+//        System.out.println("viewName="+viewName);
+//
+//        // Model의 내용을 출력
+//        System.out.println("[after] model="+model);
+//
+//        // 텍스트 파일을 이용한 rendering
+//        render(model, viewName);
     } // main
 
     static void render(Model model, String viewName)throws IOException {

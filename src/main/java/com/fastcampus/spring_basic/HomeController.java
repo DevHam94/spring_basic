@@ -1,4 +1,4 @@
-package com.fastcampus.spring_basic.ch2;
+package com.fastcampus.spring_basic;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
